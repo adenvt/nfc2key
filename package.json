@@ -1,0 +1,16 @@
+{
+  "name": "nfc2key",
+  "version": "0.1.0",
+  "description": "Make ACR122u UID to keyboard like a barcode scanner.",
+  "main": "index.js",
+  "repository": "https://ade_novit@bitbucket.org/ade_novit/nfc2key.git",
+  "author": "adenvt <adenvt@gmail.com>",
+  "license": "MIT",
+  "script": {
+  	"start": "node index.js"
+  },
+  "dependencies": {
+    "nfc-pcsc": "^0.5.0",
+    "robotjs": "^0.4.7"
+  }
+}
