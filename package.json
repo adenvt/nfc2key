@@ -6,10 +6,12 @@
   "repository": "https://ade_novit@bitbucket.org/ade_novit/nfc2key.git",
   "author": "adenvt <adenvt@gmail.com>",
   "license": "MIT",
-  "script": {
-  	"start": "node index.js"
+  "scripts": {
+    "start": "forever start index.js",
+    "stop": "forever stop index.js"
   },
   "dependencies": {
+    "forever": "^0.15.3",
     "nfc-pcsc": "^0.5.0",
     "robotjs": "^0.4.7"
   }
