@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>NFC 2 Keys</title>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <style type="text/css">
+        #detect {
+            display: none;
+            color: #10d823;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="twelve column">
+                <label for="reader">Reader <span id="detect">(Detect)</span></label>
+                <input class="u-full-width" type="text" id="reader">
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve column">
+                <label for="test">Test</label>
+                <textarea class="u-full-width" id="test" style="height: 115px"></textarea>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    const start = require('../js/main.js');
+    (() => {
+        start.default(document);
+    })()
+    </script>
+</body>
+
+</html>
